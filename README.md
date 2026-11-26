@@ -12,7 +12,7 @@
 - `ret2libc3_repro/`：GOT 泄漏、计算 libc 基址并调用 `system`
 - `ret2dlresolve_repro/`：伪造动态重定位数据并利用 PLT0 解析 `system`
 
-完整过程、保护配置、偏移、payload 结构和局限见根目录 DOCX 报告。`实验2A_报告证据/` 保存七题复现输出、checksec/GDB 操作记录和 cyclic 输入文件。
+题目原理、保护配置、偏移和 payload 说明分别见各题 README。课程 DOCX 报告保存在作者本机桌面，不随本仓库公开。`实验2A_报告证据/` 保存七题复现输出、checksec/GDB 操作记录和 cyclic 输入文件。
 
 ## 环境
 
