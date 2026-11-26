@@ -1,0 +1,7 @@
+$ gdb -q -batch -ex 'set pagination off' -ex 'run < /home/xyx/Desktop/实验2A_报告证据/ret2text_cyclic.bin > /dev/null' -ex 'info registers eip' /home/xyx/Desktop/ex2/ctf-challenges/pwn/linux/user-mode/stackoverflow/ret2text/bamboofox-ret2text/ret2text
+[exit=0]
+[pattern: cyclic(300), n=4]
+
+Program received signal SIGSEGV, Segmentation fault.
+0x62616164 in ?? ()
+eip            0x62616164          0x62616164

